@@ -120,6 +120,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link {
   color: var(--main-text-color);
@@ -133,7 +134,6 @@ ul {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link::after {
@@ -407,6 +407,7 @@ li {
 
 .sait-hover {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sait-hover:hover,
@@ -470,6 +471,9 @@ li {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filter:hover,
@@ -758,16 +762,12 @@ img {
   margin-top: 0;
   list-style: none;
   color: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link .link {
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links .link {
@@ -778,6 +778,7 @@ img {
   height: 44px;
   border-radius: 50%;
   color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item li + li {
@@ -796,7 +797,6 @@ img {
 .link:focus svg,
 .link:hover svg {
   fill: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item:hover svg,
@@ -807,13 +807,11 @@ img {
 .soc-link:hover svg,
 .soc-link:focus svg {
   fill: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links .link:hover,
 .social-links .link:focus {
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links li + li {
